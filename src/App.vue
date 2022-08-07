@@ -1,5 +1,5 @@
 <template>
-  <div class="app-grid">
+  <div class="app-grid" id="app-grid">
     <AnimatedHeader/>
     <LinkBar/>
     <span id="whitespace"></span>
@@ -36,6 +36,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
+    background: linear-gradient(180deg, #fff 0%, #fff 50%, rgb(49, 169, 97) 99%);
   }
 
   * {

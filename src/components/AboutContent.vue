@@ -24,7 +24,7 @@
     }
 
     #about-block-container {
-        background-color: green;
+        /* background-color: green; */
         height: 300px
     }
 
@@ -35,9 +35,9 @@
 
     }
 
-    #about-content {
+    /* #about-content {
         background-color: lightgreen;
-    }
+    } */
 
     #about-text {
         font-size: 25px;

@@ -16,8 +16,8 @@
                 <VueWriter id="animated-links" :array="[`@Johnny`]" :typeSpeed="200" :iterations="1"/>
             </p>
             <p>
-                <a id="social-link" href="mailto:jmg49760@uga.edu">Email</a>
-                <VueWriter id="animated-links" :array="[`jmg49760@uga.edu`]" :typeSpeed="300" :iterations="1"/>
+                <a id="social-link" href="mailto:solis.domum@gmail.com">Email</a>
+                <VueWriter id="animated-links" :array="[`solis.domum@gmail.com`]" :typeSpeed="300" :iterations="1"/>
             </p>
             <a id="close-contact-modal" @click="modalControl(`close`)">close</a>
         </div>
