@@ -39,6 +39,9 @@
 </script>
 
 <style scoped>
+    div {
+        height: 27.5px;
+    }
 
     #app-footer {
         position: fixed;
@@ -46,6 +49,7 @@
         width: 100%;
         border-top: solid 1px black;
         z-index: 999;
+        background-color: white;
         color: black;
         transition: opacity 0.8s ease-in-out;
     }

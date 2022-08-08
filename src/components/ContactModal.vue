@@ -1,5 +1,5 @@
 <template>
-    <a id="contact-modal" @click="modalControl(`open`)">contact</a>
+    <a style="--link-color: black" id="contact-modal" @click="modalControl(`open`)">contact</a>
     <div class="contact-modal-container" id="contact_modal_container">
         <div class="contact-modal-content">
             <h1>contacts</h1>
@@ -19,7 +19,7 @@
                 <a id="social-link" href="mailto:solis.domum@gmail.com">Email</a>
                 <VueWriter id="animated-links" :array="[`solis.domum@gmail.com`]" :typeSpeed="300" :iterations="1"/>
             </p>
-            <a id="close-contact-modal" @click="modalControl(`close`)">close</a>
+            <a style="--link-color: red" id="close-contact-modal" @click="modalControl(`close`)">close</a>
         </div>
     </div>
 </template>
@@ -134,7 +134,7 @@
 
     @keyframes colorFade {
         0% {
-            background-color: black;
+            background-color: var(--link-color);
         }
         50% {
             background-color: transparent;
