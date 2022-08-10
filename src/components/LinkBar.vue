@@ -2,7 +2,7 @@
     <nav id="linkbar-container">
         <a id="nav-link" @click="openAboutSection()">about</a>
         <a id="nav-link" @click="openProjects()">projects</a>
-        <a id="nav-link" href="">music</a>
+        <a id="nav-link" @click="openAudio()">music</a>
         <ContactModal/>
         <br/>
         <br/>
@@ -34,6 +34,11 @@
                 document.getElementById(`projects-modal`).style.opacity = 1
                 document.getElementById(`projects-modal`).style.pointerEvents = `auto`
                 document.body.style.overflow = `hidden`
+            },
+            openAudio() {
+                document.getElementById(`audio-modal`).style.opacity = 1
+                document.getElementById(`audio-modal`).style.pointerEvents = `auto`
+                document.body.style.overflow = `auto`   
             },
             openMessenger() {
                 document.getElementById(`email-section-container`).style.opacity = 1

@@ -125,7 +125,6 @@
     }
 
     #close-contact-modal {
-        /* grid-column: 1/5; */
         cursor: pointer;
         padding: 0 10px;
         border: solid 1px red;

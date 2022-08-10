@@ -4,7 +4,7 @@
     <LinkBar/>
     <AboutContent/>
     <ProjectContent/>
-    <!-- <AudioContent/> -->
+    <AudioContent/>
     <SendEmail/>
   </div>
   <AppFooter/>
@@ -15,7 +15,7 @@ import AnimatedHeader from './components/AnimatedHeader.vue'
 import LinkBar from './components/LinkBar.vue'
 import AboutContent from './components/AboutContent.vue'
 import ProjectContent from './components/ProjectContent.vue'
-// import AudioContent from './components/AudioContent.vue'
+import AudioContent from './components/AudioContent.vue'
 import SendEmail from './components/SendEmail.vue'
 import AppFooter from './components/AppFooter.vue'
 
@@ -26,7 +26,7 @@ export default {
     LinkBar,
     AboutContent,
     ProjectContent,
-    // AudioContent,
+    AudioContent,
     SendEmail,
     AppFooter
   },

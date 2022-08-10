@@ -2,26 +2,26 @@
     <a style="--link-color: black" id="contact-modal" @click="modalControl(`open`)">socials</a>
     <div class="contact-modal-container" id="contact_modal_container">
         <div class="contact-modal-content">
-            <h1>contacts</h1>
+            <h1>socials</h1>
+            <br/>
             <p>
                 <a id="social-link" href="https://www.github.com/calmhand">Github</a> 
-                <VueWriter id="animated-links" :array="[`calmhand`]" :typeSpeed="500" :iterations="1"/>
             </p>
+            <br/>
             <p>
-                <a id="social-link" href="https://www.instagram.com/calmhand_______">Instagram</a>
-                <VueWriter id="animated-links" :array="[`@calmhand_______`]" :typeSpeed="200" :iterations="1"/>
+                <a id="social-link" href="https://linktr.ee/calmhand">Music</a>
             </p>
+            <br/>
             <p>
                 <a id="social-link" href="https://www.linkedin.com/in/johnny-goulbourne-052667225/">LinkedIn</a>
-                <VueWriter id="animated-links" :array="[`@Johnny`]" :typeSpeed="200" :iterations="1"/>
             </p>
+            <br/>
             <a style="--link-color: red" id="close-contact-modal" @click="modalControl(`close`)">close</a>
         </div>
     </div>
 </template>
 
 <script>
-    import VueWriter from 'vue-writer'
 
     export default {
         data() {
@@ -29,7 +29,6 @@
             }
         },
         components: {
-            VueWriter,
         },
         methods: {
             modalControl(option) {
@@ -69,7 +68,7 @@
 
     .contact-modal-content {
         background-color: white;
-        width: 35vw;
+        width: 300px;
         max-width: 100%;
         text-align: center;
         padding: 30px 50px;
@@ -106,6 +105,7 @@
     #close-contact-modal {
         cursor: pointer;
         padding: 0 10px 0 10px;
+        border: solid 1px red;
         color: red;
         font-weight: 700;
     }
