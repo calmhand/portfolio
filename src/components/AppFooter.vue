@@ -1,10 +1,9 @@
 <template>
-    <div>
         <footer id="app-footer">
-            <a @click="toTop()" href="#app-grid" id="return-to-top">TOP &uarr;</a>
-            <p id="copyright-text">{{year}} &copy; SOLAR HOME &#9788;</p>
+            <a @click="toTop()" id="return-to-top">TOP &uarr;</a>
+            <img src="../assets/gem.webp" style="width:20px; height: 27px; float:right; padding-right: 10px;"/>
+            <p id="copyright-text">{{year}} &copy; SOLAR HOME </p>
         </footer>
-    </div>
 </template>
 
 <script>
@@ -39,9 +38,6 @@
 </script>
 
 <style scoped>
-    div {
-        height: 27.5px;
-    }
 
     #app-footer {
         position: fixed;
@@ -56,6 +52,7 @@
 
     #return-to-top {
         text-decoration: none;
+        cursor: pointer;
         opacity: 0;
         margin: 0;
         padding-left: 10px;

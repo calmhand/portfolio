@@ -15,10 +15,6 @@
                 <a id="social-link" href="https://www.linkedin.com/in/johnny-goulbourne-052667225/">LinkedIn</a>
                 <VueWriter id="animated-links" :array="[`@Johnny`]" :typeSpeed="200" :iterations="1"/>
             </p>
-            <!-- <p>
-                <a id="social-link" href="mailto:solis.domum@gmail.com">Email</a>
-                <VueWriter id="animated-links" :array="[`solis.domum@gmail.com`]" :typeSpeed="300" :iterations="1"/>
-            </p> -->
             <a style="--link-color: red" id="close-contact-modal" @click="modalControl(`close`)">close</a>
         </div>
     </div>
@@ -61,7 +57,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.8);
         position: fixed;
         top: 0;
         left: 0;

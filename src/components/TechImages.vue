@@ -20,8 +20,7 @@
     #img-container {
         grid-column: 1/5;
         text-align: center;
-        border-top: solid 1px black;
-        border-bottom: solid 1px black;
+        padding-top: 20px;
     }
 
     #tech-imgs {

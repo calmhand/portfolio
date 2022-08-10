@@ -1,13 +1,14 @@
 <template>
 
   <div id="gl-container">
-  <!-- canvas here -->
+  <!-- canvas here via javascript mounted hook-->
   </div>
   <div id="typeWriter">
     <VueWriter caret="cursor" :array="txt" :typeSpeed="100" :eraseSpeed="50">
       I am
     </VueWriter>
   </div>
+  <br/>
 
 </template>
 
@@ -21,7 +22,7 @@ export default {
   data() {
     return {
       cnv: document.createElement('canvas'),
-      txt: ["johnny.", "calmhand.", "a programmer.", "a designer.", "a audio engineer."]
+      txt: ["johnny.", "calmhand.", "a cs student.", "a programmer.", "a designer.", "a audio engineer."]
     }
   },
   methods: {
@@ -51,7 +52,7 @@ export default {
 <style>
 
   #gl-container {
-    margin-top: 10%;
+    margin: auto 0;
   }
 
   #typeWriter {

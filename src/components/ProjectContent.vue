@@ -2,6 +2,7 @@
     <div class="project-section-container" id="project-section-container">
         <div id="proj-title-container">
             <h1 id="proj-title">Projects</h1>
+            <span>(click image for details)</span>
         </div>
         <div id="proj-imgs-container">
             <img id="proj-img" alt="calc-app-img" src="../assets/project-recordings/calc-sc.png" @click="openModal(`calc-modal`)"/>
@@ -82,7 +83,6 @@
 
     #proj-imgs-container {
         grid-column: 1/5;
-        border-bottom: solid 1px white;
     }
 
     #proj-img {

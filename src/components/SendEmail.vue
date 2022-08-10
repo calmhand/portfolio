@@ -1,7 +1,9 @@
 <template>
-    <div class="contact-section-container">
-        <h1 id="message-title">Send A Message</h1>
+    <div class="contact-section-container" id="email-section-container">
         <div class="contact-form-container">
+            <a style="--link-color: red" id="close-contact-modal" @click="closeEmailModal()">close</a>
+            <br/>
+            <h1 id="message-title">Message Me!</h1>
             <form
             id="contact-form"
             action="https://formspree.io/f/maykyywp"
@@ -9,7 +11,7 @@
             >
                 <label for="pronoun-select">
                     <select id="pronoun-selector" name="pronoun-select" required>
-                        <option>----------------------- Please select your pronouns -----------------------</option>
+                        <option>------ Please select your pronouns ------</option>
                         <option value="He/Him">He/Him</option>
                         <option value="He/They">He/They</option>
                         <option value="She/Her">She/Her</option>
@@ -46,16 +48,43 @@
 <script>
     export default {
         name: "SendEmail",
+        methods: {
+            closeEmailModal() {
+                document.getElementById(`email-section-container`).style.opacity = 0
+                document.getElementById(`email-section-container`).style.pointerEvents = `none`
+                document.getElementById(`app-footer`).style.opacity = 1
+                document.body.style.overflow = `auto`    
+            }
+        }
     }
 </script>
 
 <style scoped>
 
+    .contact-section-container {
+        pointer-events: none;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        transition: opacity 0.8s ease-in-out;
+    }
+
     .contact-form-container {
-        width: 400px;
-        text-align: left;
-        margin: 0 auto;
         padding: 15px;
+        background-color: white;
+        text-align: center;
+        padding: 30px 50px;
+        box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
+        height: 500px;
+        width: 350px;
     }
 
     #name-input, #email-input {
@@ -82,7 +111,6 @@
     #form-button {
         text-decoration: none;
         text-align: center;
-        color: green;
         padding: 0 10px 0 10px;
         cursor: pointer;
         border: solid 1px green;
@@ -94,8 +122,32 @@
         color: green;
     }
 
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+        .contact-form-container {
+        padding: 15px;
+        background-color: white;
+        text-align: center;
+        padding: 30px 50px;
+        box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
+        height: 500px;
+        width: 275px;
+        }
+    }
+
+    #close-contact-modal {
+        cursor: pointer;
+        padding: 0 10px;
+        border: solid 1px red;
+        color: red;
+        float: right;
+        font-weight: 700;
+    }
+
     @media (hover:hover) {
-        #form-button:hover {
+        #form-button:hover, #close-contact-modal:hover {
             animation: colorFade 0.9s infinite;
         }
     }

@@ -1,10 +1,13 @@
 <template>
-    <div id="linkbar-container">
-        <a id="nav-link" @click="scrollToSection(1007)">about</a>
+    <nav id="linkbar-container">
+        <a id="nav-link" @click="openAboutSection()">about</a>
         <a id="nav-link" @click="scrollToSection(2250)">projects</a>
         <a id="nav-link" href="">music</a>
         <ContactModal/>
-    </div>
+        <br/>
+        <br/>
+        <a id="nav-link" @click="openMessenger()">message me!</a>
+    </nav>
 </template>
 
 <script>
@@ -21,6 +24,16 @@
         methods: {
             scrollToSection(num) {
                 window.scrollTo(0, num)
+            },
+            openAboutSection() {
+                document.getElementById(`about-modal`).style.opacity = 1
+                document.getElementById(`about-modal`).style.pointerEvents = `auto`
+                document.body.style.overflow = `hidden`
+            },
+            openMessenger() {
+                document.getElementById(`email-section-container`).style.opacity = 1
+                document.getElementById(`email-section-container`).style.pointerEvents = `auto`
+                document.body.style.overflow = `hidden`
             }
         },
     }
@@ -35,7 +48,8 @@
     #nav-link {
         text-decoration: none;
         text-align: center;
-        padding: 0 10px 0 10px;
+        padding: 0 10px;
+        margin: 0 10px;
         cursor: pointer;
     }
 

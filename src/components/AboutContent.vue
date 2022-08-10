@@ -1,24 +1,34 @@
 <template>
-    <div class="about-section" id="about-section">
-        <div id="about-block-container"><p id="about-block">About Me</p></div>
-        <div id="about-content">
-                <p id="about-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-        </div>
-        <TechImages/>
-        <div id="studies-section">
-            <img id="school-logo" alt="uga-logo" src="../assets/uga_logo.png"/>
-            <h4 style="text-decoration: underline;">Fall 2022 Coursework</h4>
-            <div id="studies-content">
-                <h5>CSCI 4050 - Software Engineering</h5>
-                <h5>SPAN 2001 - Spanish III</h5>
-                <h5>NMIX 4020 - Advanced Web Development</h5>
-                <h5>STAT 2000 - Intro to Statistics</h5>
+    <div id="about-modal">
+        <div class="about-section" id="about-section">
+            <div id="about-content">
+                <h1 id="about-block">About Me</h1>
+                <blockquote id="about-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione harum minus! Cum unde est, nulla similique eveniet veritatis minus animi ea aperiam, facilis nemo pariatur accusamus ex fugit explicabo!
+                </blockquote>
             </div>
-        </div>
-        <div id="interests-section">
-            INTERESTS
+            <TechImages/>
+            <div id="studies-section">
+                <img id="school-logo" alt="uga-logo" src="../assets/uga_logo.png"/>
+                <h4 style="text-decoration: underline;">Fall 2022 Coursework</h4>
+                <div id="studies-content">
+                    <h5>CSCI 4050 - Software Engineering</h5>
+                    <h5>SPAN 2001 - Spanish III</h5>
+                    <h5>NMIX 4020 - Advanced Web Development</h5>
+                    <h5>STAT 2000 - Intro to Statistics</h5>
+                </div>
+            </div>
+            <div id="interests-section">
+                <h1 style="padding: 10px;">Interests</h1>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate eaque similique ex harum tempore, molestias optio minus nam nesciunt. Asperiores sequi vel consequatur rem aspernatur iusto ex aperiam dolore?
+                    </p>
+                    <br/>
+                    <a style="--link-color: red" id="close-contact-modal" @click="closeAboutModal()">close</a>
+                    <br/>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -28,58 +38,114 @@
     export default {
         name: `AboutContent`,
         components: {TechImages},
+        methods: {
+            closeAboutModal() {
+                document.getElementById(`about-modal`).style.opacity = 0
+                document.getElementById(`about-modal`).style.pointerEvents = `none`
+                document.getElementById(`app-footer`).style.opacity = 1
+                document.body.style.overflow = `auto`    
+            }
+        }
     }
 </script>
 
 <style scoped>
-    .about-section {
-        position: relative;
-        display: grid;
-        grid-template-columns: 30% 70%;
-        color: black;
-        border-bottom: solid 1px black;
-        border-top: solid 1px black;
+
+    #about-modal {
+        pointer-events: none;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(80, 80, 255);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 28px);
+        z-index: 999;
+        transition: opacity 0.8s ease-in-out;
     }
 
-    #about-block-container {
-        /* background-color: green; */
-        height: 300px
+    .about-section {
+        max-height: 100vh;
+        height: 100%;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        color: white;
+        background-color: rgb(80, 80, 255);
     }
 
     #about-block {
-        padding-top: 130px;
+        margin: 20px auto;
+        grid-column: 1/5;
         font-size: 30px;
-
     }
 
-    /* #about-content {
-        background-color: lightgreen;
-    } */
+    #about-content {
+        grid-column: 1/5;
+    }
 
     #about-text {
-        padding: 15px;
-        font-size: 25.5px;
+        font-size: 15px;
     }
 
     #studies-section {
-        grid-column: 1/2;
-        border-right: solid 1px black;
+        grid-column: 1/5;
     }
 
     #school-logo {
         width: 200px;
         height: 75px;
-        padding-top: 27px;
+        padding-top: 20px;
         justify-content: center;
     }
 
     #studies-content {
-        grid-column: 2/5;
-        text-align: left;
+        grid-column: 1/5;
         padding: 15px;
+        margin: 0 auto;
+        
     }
 
     h5 {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    #interests-section {
+        grid-column: 1/5;
+        margin: 20px auto;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #close-contact-modal {
+        /* grid-column: 1/5; */
+        cursor: pointer;
+        padding: 0 10px;
+        border: solid 1px red;
+        color: red;
+        font-weight: 700;
+    }
+
+    @media (hover:hover) {
+        #close-contact-modal:hover {
+            animation: colorFade 0.9s infinite;
+        }
+    }
+
+    @keyframes colorFade {
+        0% {
+            background-color: var(--link-color);
+        }
+        50% {
+            background-color: transparent;
+        }
+        99% {
+            background-color: transparent;
+        }
     }
 </style>
