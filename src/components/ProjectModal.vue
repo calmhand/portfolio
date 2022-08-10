@@ -4,6 +4,7 @@
             <h1>{{name}}</h1>
             <h4>{{about}}</h4>
             <p>{{description}}</p>
+            <br/>
             <a style="--link-color: green" id="proj-site-link" v-bind:href="link">enter</a>
             <a style="--link-color: black" id="proj-site-repo" v-bind:href="git_link">repo</a>
             <a style="--link-color: red" id="close-proj-modal" @click="modalControl(proj)">close</a>
@@ -53,7 +54,8 @@
 
     .project-modal-content {
         background-color: white;
-        width: 35vw;
+        height: 450px;
+        width: 275px;
         max-width: 100%;
         text-align: center;
         padding: 30px 50px;

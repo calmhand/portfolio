@@ -1,7 +1,7 @@
 <template>
     <nav id="linkbar-container">
         <a id="nav-link" @click="openAboutSection()">about</a>
-        <a id="nav-link" @click="scrollToSection(2250)">projects</a>
+        <a id="nav-link" @click="openProjects()">projects</a>
         <a id="nav-link" href="">music</a>
         <ContactModal/>
         <br/>
@@ -28,6 +28,11 @@
             openAboutSection() {
                 document.getElementById(`about-modal`).style.opacity = 1
                 document.getElementById(`about-modal`).style.pointerEvents = `auto`
+                document.body.style.overflow = `hidden`
+            },
+            openProjects() {
+                document.getElementById(`projects-modal`).style.opacity = 1
+                document.getElementById(`projects-modal`).style.pointerEvents = `auto`
                 document.body.style.overflow = `hidden`
             },
             openMessenger() {

@@ -89,6 +89,7 @@
 
     #about-text {
         font-size: 15px;
+        padding: 0 5px;
     }
 
     #studies-section {
@@ -120,6 +121,7 @@
 
     p {
         font-size: 15px;
+        padding: 0 5px;
     }
 
     #close-contact-modal {
