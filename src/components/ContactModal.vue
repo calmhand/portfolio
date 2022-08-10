@@ -1,5 +1,5 @@
 <template>
-    <a style="--link-color: black" id="contact-modal" @click="modalControl(`open`)">contact</a>
+    <a style="--link-color: black" id="contact-modal" @click="modalControl(`open`)">socials</a>
     <div class="contact-modal-container" id="contact_modal_container">
         <div class="contact-modal-content">
             <h1>contacts</h1>
@@ -15,10 +15,10 @@
                 <a id="social-link" href="https://www.linkedin.com/in/johnny-goulbourne-052667225/">LinkedIn</a>
                 <VueWriter id="animated-links" :array="[`@Johnny`]" :typeSpeed="200" :iterations="1"/>
             </p>
-            <p>
+            <!-- <p>
                 <a id="social-link" href="mailto:solis.domum@gmail.com">Email</a>
                 <VueWriter id="animated-links" :array="[`solis.domum@gmail.com`]" :typeSpeed="300" :iterations="1"/>
-            </p>
+            </p> -->
             <a style="--link-color: red" id="close-contact-modal" @click="modalControl(`close`)">close</a>
         </div>
     </div>

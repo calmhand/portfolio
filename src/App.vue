@@ -8,6 +8,7 @@
     <ProjectContent/>
     <!-- <span class="whitespace" id="whitespace3"></span> -->
     <AudioContent/>
+    <SendEmail/>
   </div>
   <AppFooter/>
 </template>
@@ -18,6 +19,7 @@ import LinkBar from './components/LinkBar.vue'
 import AboutContent from './components/AboutContent.vue'
 import ProjectContent from './components/ProjectContent.vue'
 import AudioContent from './components/AudioContent.vue'
+import SendEmail from './components/SendEmail.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
@@ -28,6 +30,7 @@ export default {
     AboutContent,
     ProjectContent,
     AudioContent,
+    SendEmail,
     AppFooter
   },
   beforeUnmount() {

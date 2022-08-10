@@ -2,7 +2,7 @@
     <div id="linkbar-container">
         <a id="nav-link" @click="scrollToSection(1007)">about</a>
         <a id="nav-link" @click="scrollToSection(2250)">projects</a>
-        <a id="nav-link" href="">audio</a>
+        <a id="nav-link" href="">music</a>
         <ContactModal/>
     </div>
 </template>
