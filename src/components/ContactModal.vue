@@ -114,7 +114,8 @@
     #contact-modal {
         text-decoration: none;
         text-align: center;
-        padding: 0 10px 0 10px;
+        padding: 0 10px;
+        margin: 0 10px;
         cursor: pointer;
     }
 

@@ -3,6 +3,10 @@
         <div class="project-section-container" id="project-section-container">
             <div id="proj-title-container">
                 <h1 id="proj-title">Projects</h1>
+                <br/>
+                <a style="--link-color: red" id="close-contact-modal" @click="closeProjectModal()">close</a>
+                <br/>
+                <br/>
                 <span>(click image for details)</span>
             </div>
             <div id="proj-imgs-container">
@@ -35,10 +39,6 @@
                 />
                 
             </div>
-            <br/>
-            <a style="--link-color: red" id="close-contact-modal" @click="closeProjectModal()">close</a>
-            <br/>
-            <br/>
         </div>
     </div>
 </template>
@@ -101,7 +101,7 @@
     }
 
     #proj-title {
-        padding: 10px;
+        margin: 20px auto 0 0;
     }
 
     #proj-img {

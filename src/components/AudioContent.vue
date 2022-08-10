@@ -1,26 +1,27 @@
 <template>
     <div class="audio_modal" id="audio-modal">
         <div class="audio-content-container" id="audio-content-container">
-            <h1 id="audio-title">Audio</h1>
-            <video autoplay defaultMuted playsinline muted id="viddy" loop src="../assets/audio-recordings/ableton_scrolling.mp4" type="video/mp4" ></video>
-            <iframe
-                id="spotify-embed"
-                src="https://open.spotify.com/embed/album/3SoVpg1fEmEokO4qdXmd09?utm_source=generator"
-                rel="prefetch"
-                height="300px" frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-            <p id="audio-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quas enim vero necessitatibus quo? 
-                Quae quia quisquam, quas ipsa dolores harum accusamus earum, atque cumque sint quam fugiat exercitationem, similique itaque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quas enim vero necessitatibus quo? 
-            </p>
-            <br/>
-            <a style="--link-color: red" id="close-contact-modal" @click="closeAudioModal()">close</a>
-            <br/>
-            <br/>
+            <div style="grid-column: 1/5; margin: 20px auto;">
+                <h1 id="audio-title">Audio</h1>
+                <a style="--link-color: red" id="close-contact-modal" @click="closeAudioModal()">close</a>
+                <div style="grid-column: 1/5; margin: 20px auto;">
+                    <video autoplay defaultMuted playsinline muted id="viddy" loop src="../assets/audio-recordings/ableton_scrolling.mp4" type="video/mp4" ></video>
+                    <iframe
+                        id="spotify-embed"
+                        src="https://open.spotify.com/embed/album/3SoVpg1fEmEokO4qdXmd09?utm_source=generator"
+                        rel="prefetch"
+                        height="300px" frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                    </iframe>
+                </div>
+                <p id="audio-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quas enim vero necessitatibus quo? 
+                    Quae quia quisquam, quas ipsa dolores harum accusamus earum, atque cumque sint quam fugiat exercitationem, similique itaque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quas enim vero necessitatibus quo? 
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -58,22 +59,21 @@
     }
 
     .audio-content-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
         max-height: 100vh;
         height: 100%;
         overflow-y: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         color: black;
     }
 
     #audio-title {
-        padding: 10px;
         grid-column: 1/5;
     }
 
     #viddy {
         grid-column: 1/2;
-        margin: 0 20px;
+        margin: 0 5px;
         width: 300px;
         height: 300px;
         border: solid 5px black;
@@ -81,9 +81,6 @@
         text-align: left;
     }
 
-    #audio-text-spotify-container {
-        margin: 5px;
-    }
 
     #audio-text {
         font-size: 18px;

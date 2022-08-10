@@ -3,6 +3,10 @@
         <div class="about-section" id="about-section">
             <div id="about-content">
                 <h1 id="about-block">About Me</h1>
+                <br/>
+                <a style="--link-color: red" id="close-contact-modal" @click="closeAboutModal()">close</a>
+                <br/>
+                <br/>
                 <blockquote id="about-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione harum minus! Cum unde est, nulla similique eveniet veritatis minus animi ea aperiam, facilis nemo pariatur accusamus ex fugit explicabo!
                 </blockquote>
@@ -24,9 +28,6 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate eaque similique ex harum tempore, molestias optio minus nam nesciunt. Asperiores sequi vel consequatur rem aspernatur iusto ex aperiam dolore?
                     </p>
-                    <br/>
-                    <a style="--link-color: red" id="close-contact-modal" @click="closeAboutModal()">close</a>
-                    <br/>
                 </div>
             </div>
         </div>
@@ -78,7 +79,7 @@
     }
 
     #about-block {
-        margin: 20px auto;
+        margin: 20px auto 0 0;
         grid-column: 1/5;
         font-size: 30px;
     }
