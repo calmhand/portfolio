@@ -1,10 +1,10 @@
 <template>
     <div class="project-modal-container" id="project_modal_container">
         <div class="project-modal-content">
-            <h1>{{name}}</h1>
+            <h2>{{name}}</h2>
             <h4>{{about}}</h4>
+            <span id="tech-styles">{{techs}}</span>
             <p>{{description}}</p>
-            <br/>
             <a style="--link-color: green" id="proj-site-link" v-bind:href="link">enter</a>
             <a style="--link-color: black" id="proj-site-repo" v-bind:href="git_link">repo</a>
             <a style="--link-color: red" id="close-proj-modal" @click="modalControl(proj)">close</a>
@@ -20,6 +20,7 @@
             name: String,
             about: String,
             description: String,
+            techs: String,
             link: String,
             git_link: String
         },
@@ -27,7 +28,6 @@
             modalControl(str) {
                 document.getElementById(str).style.opacity = 0
                 document.getElementById(str).style.pointerEvents = `none`
-                document.getElementById(`app-footer`).style.opacity = 1
                 document.body.style.overflow = `auto`
             }
         },
@@ -54,11 +54,11 @@
 
     .project-modal-content {
         background-color: white;
-        height: 450px;
-        width: 275px;
+        height: auto;
+        width: 450px;
         max-width: 100%;
         text-align: center;
-        padding: 30px 50px;
+        padding: 25px 45px;
         box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
     }
 
@@ -81,6 +81,11 @@
 
     #proj-site-repo {
         color: black;
+    }
+
+    #tech-styles {
+        opacity: 0.4;
+        font-size: 14px;
     }
 
     #close-proj-modal {
@@ -110,6 +115,18 @@
         99% {
             background-color: transparent;
         }
+    }
+
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+        .project-modal-content {
+            height: 250px;
+            width: 475px;
+        }
+
     }
 
 </style>

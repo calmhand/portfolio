@@ -79,4 +79,5 @@ export default {
       background-color: transparent;
     }
   }
+
 </style>

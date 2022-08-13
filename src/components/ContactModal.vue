@@ -68,7 +68,7 @@
 
     .contact-modal-content {
         background-color: white;
-        width: 300px;
+        width: 250px;
         max-width: 100%;
         text-align: center;
         padding: 30px 50px;

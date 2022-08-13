@@ -5,7 +5,7 @@
     <AboutContent/>
     <ProjectContent/>
     <AudioContent/>
-    <SendEmail/>
+    <!-- <SendEmail/> -->
   </div>
   <AppFooter/>
 </template>
@@ -27,6 +27,7 @@ export default {
     AboutContent,
     ProjectContent,
     AudioContent,
+    // eslint-disable-next-line
     SendEmail,
     AppFooter
   },
@@ -56,8 +57,36 @@ export default {
   }
 
   .app-grid {
-    position:relative;
-    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* laptop/desktop */
+  @media only screen and (min-width: 992px) {
+    .app-grid {
+      overflow: hidden;
+      position: relative;
+      top: 20%; 
+    }
+  }
+
+
+  /* mobile portrait */
+  @media only screen and (max-width: 600px) {
+    .app-grid {
+      overflow: hidden;
+      position: relative;
+      top: 20%; 
+    }
+  }
+  
+  /* mobile landscape */
+  @media only screen and (max-width: 844px) and (orientation: landscape) {
+    .app-grid {
+      position: relative;
+      bottom: 8%; 
+    }
   }
 
 </style>

@@ -8,7 +8,8 @@
                 <br/>
                 <br/>
                 <blockquote id="about-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione harum minus! Cum unde est, nulla similique eveniet veritatis minus animi ea aperiam, facilis nemo pariatur accusamus ex fugit explicabo!
+                    I am a Computer Science student in my senior year at University of Georgia who
+                    is working hard to become a great Full-Stack Programmer. 
                 </blockquote>
             </div>
             <TechImages/>
@@ -26,7 +27,10 @@
                 <h1 style="padding: 10px;">Interests</h1>
                 <div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In cupiditate eaque similique ex harum tempore, molestias optio minus nam nesciunt. Asperiores sequi vel consequatur rem aspernatur iusto ex aperiam dolore?
+                        <b style="font-size: 28px;">Web Frameworks</b>, Databases, Front-End Development, <b style="font-size: 28px;">Back-End Development</b>, 
+                        Graphics Programming, <b style="font-size: 28px;">Audio Engineering</b>, Video Gaming, Cooking, 
+                        <b style="font-size: 28px;">Basketball</b>, Baseball, <b style="font-size: 28px;">Fashion</b>,
+                        Music Production, National Parks, Natural Science, Environmental Science, <b style="font-size: 28px;">Forests</b>.
                     </p>
                 </div>
             </div>
@@ -76,6 +80,7 @@
         grid-template-columns: repeat(4, 1fr);
         color: white;
         background-color: rgb(80, 80, 255);
+        padding: 0 5vw;
     }
 
     #about-block {
@@ -89,8 +94,7 @@
     }
 
     #about-text {
-        font-size: 15px;
-        padding: 0 5px;
+        font-size: 25px;
     }
 
     #studies-section {
@@ -121,8 +125,7 @@
     }
 
     p {
-        font-size: 15px;
-        padding: 0 5px;
+        font-size: 20px;
     }
 
     #close-contact-modal {
@@ -130,6 +133,7 @@
         padding: 0 10px;
         border: solid 1px red;
         color: red;
+        background-color: white;
         font-weight: 700;
     }
 
@@ -144,10 +148,10 @@
             background-color: var(--link-color);
         }
         50% {
-            background-color: transparent;
+            background-color: white;
         }
         99% {
-            background-color: transparent;
+            background-color: white;
         }
     }
 </style>

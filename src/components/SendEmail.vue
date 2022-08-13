@@ -3,7 +3,7 @@
         <div class="contact-form-container">
             <a style="--link-color: red" id="close-contact-modal" @click="closeEmailModal()">close</a>
             <br/>
-            <h1 id="message-title">Message Me!</h1>
+            <h2 id="message-title">Message Me!</h2>
             <form
             id="contact-form"
             action="https://formspree.io/f/maykyywp"
@@ -84,7 +84,7 @@
         padding: 30px 50px;
         box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
         height: 500px;
-        width: 350px;
+        width: 250px;
     }
 
     #name-input, #email-input {
@@ -124,16 +124,17 @@
 
     @media only screen 
     and (min-device-width: 375px) 
-    and (max-device-width: 812px) 
-    and (-webkit-min-device-pixel-ratio: 3) { 
+    and (max-device-width: 844px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
         .contact-form-container {
-        padding: 15px;
-        background-color: white;
-        text-align: center;
-        padding: 30px 50px;
-        box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
-        height: 500px;
-        width: 275px;
+            padding: 15px;
+            background-color: white;
+            text-align: center;
+            padding: 30px 50px;
+            box-shadow: 12px 12px 0 1px rgba(0, 0, 0, 1);
+            height: 300px;
+            width: 675px;
         }
     }
 

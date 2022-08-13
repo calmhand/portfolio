@@ -2,9 +2,22 @@
     <div class="audio_modal" id="audio-modal">
         <div class="audio-content-container" id="audio-content-container">
             <div style="grid-column: 1/5; margin: 20px auto;">
-                <h1 id="audio-title">Audio</h1>
+                <h1 id="audio-title">Music</h1>
+                <br/>
                 <a style="--link-color: red" id="close-contact-modal" @click="closeAudioModal()">close</a>
-                <div style="grid-column: 1/5; margin: 20px auto;">
+                <br/>
+                <br/>
+                <p id="audio-text">
+                    I produce/mix all of my own music with Ableton Live 10.
+                    <br/>
+                    <br/>
+                    My setup consists of Yamaha HS8 Monitors, a Kontakt Komplete Kontrol Midi Keyboard, an Ableton Push 1,
+                    and a Shure SM58 Microphone.
+                    <br/>
+                    <br/>
+                    My favorite styles of music is Electionic/Dance, Experimental Hip-Hop, and Drum & Bass.
+                </p>
+                <div style="grid-column: 1/5; margin: 10px auto;">
                     <video autoplay defaultMuted playsinline muted id="viddy" loop src="../assets/audio-recordings/ableton_scrolling.mp4" type="video/mp4" ></video>
                     <iframe
                         id="spotify-embed"
@@ -14,12 +27,22 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                     </iframe>
                 </div>
-                <p id="audio-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quas enim vero necessitatibus quo? 
-                    Quae quia quisquam, quas ipsa dolores harum accusamus earum, atque cumque sint quam fugiat exercitationem, similique itaque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quas enim vero necessitatibus quo? 
+                <p>
+                    I have some music live on streaming services as seen above.
+                    <br/>
+                    <b>I primarily make Experimental Electronic/Hip-Hop beats.</b>
+                    <br/>
+                    <b>
+                        Follow my <a id="social-link" href="https://open.spotify.com/artist/2ret4fK3Igy4SnBQYLEmup?si=16W6Z2qLRzmkDrSUquCX0g">Spotify</a>, 
+                        <a id="social-link" href="https://calmhand.bandcamp.com/releases">Bandcamp</a>, 
+                        and <a id="social-link" href="https://soundcloud.com/calmhand">Soundcloud</a>
+                    </b>
+                    <br/>
+                    <br/>
+                    <b>
+                        If you have any questions or wish to collab, either email me from the home page of this site
+                        or DM me on my <a id="social-link" href="https://www.instagram.com/calmhand_______/">Instagram!</a>
+                    </b>
                 </p>
             </div>
         </div>
@@ -48,7 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(165, 87, 225);
+        background-color: black;
         position: fixed;
         top: 0;
         left: 0;
@@ -64,7 +87,7 @@
         max-height: 100vh;
         height: 100%;
         overflow-y: auto;
-        color: black;
+        color: beige;
     }
 
     #audio-title {
@@ -82,9 +105,10 @@
     }
 
 
-    #audio-text {
-        font-size: 18px;
+    #audio-text, p {
+        font-size: 15px;
         grid-column: 1/5;
+        padding: 25px;
         
     }
 
@@ -95,6 +119,11 @@
         margin: 0 auto;
     }
 
+    #social-link, #social-link:hover, #social-link:visited {
+        text-decoration: none;
+        color: forestgreen;
+    }
+
     #close-contact-modal {
         grid-column: 1/5;
         cursor: pointer;
@@ -103,6 +132,7 @@
         border: solid 1px red;
         height: 25px;
         color: red;
+        background-color: white;
         font-weight: 700;
     }
 
@@ -117,10 +147,10 @@
             background-color: var(--link-color);
         }
         50% {
-            background-color: transparent;
+            background-color: white;
         }
         99% {
-            background-color: transparent;
+            background-color: white;
         }
     }
 
@@ -134,7 +164,6 @@
             height: 100%;
             overflow-y: auto;
             display: block;
-            color: black;
         }
 
         #spotify-embed {

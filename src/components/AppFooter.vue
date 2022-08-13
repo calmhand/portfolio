@@ -1,6 +1,6 @@
 <template>
         <footer id="app-footer">
-            <a @click="toTop()" id="return-to-top">TOP &uarr;</a>
+            <!-- <a @click="toTop()" id="return-to-top">TOP &uarr;</a> -->
             <img src="../assets/gem.webp" style="width:20px; height: 27px; float:right; padding-right: 10px;"/>
             <p id="copyright-text">{{year}} &copy; SOLAR HOME </p>
         </footer>
@@ -44,7 +44,8 @@
         bottom: 0;
         width: 100%;
         border-top: solid 1px black;
-        z-index: 999;
+        pointer-events: none;
+        /* z-index: 999; */
         background-color: white;
         color: black;
         transition: opacity 0.8s ease-in-out;

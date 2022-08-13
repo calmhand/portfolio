@@ -17,7 +17,8 @@
                     :proj="`calc-modal`" 
                     :name="`Calculator`" 
                     :about="`Compute basic mathematical functions.`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`"
+                    :description="`Created in the summer of 2022, this app was made to assist in a personal goal of mine to practice Javascript and learn a new framework, VueJs. `"
+                    :techs="`[Vue, Js, HTML, CSS]`"
                     :link="calc_link"
                     :git_link="calc_repo"
                 />
@@ -25,7 +26,8 @@
                     :proj="`weather-modal`" 
                     :name="`Weather`"
                     :about="`Display real-time forecasts in your area.`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`"
+                    :description="`Created in the summer of 2022, I started this project with 3 goals in mind. Learn Javascript's Fetch/Async functions, learn what JSON is and how to access/modify it with an external API, and to continue to practice Javascript and VueJs.`"
+                    :techs="`[Vue, Js, HTML, CSS, WeatherApi.com]`"
                     :link="weather_link"
                     :git_link="weather_repo"
                 />
@@ -33,7 +35,8 @@
                     :proj="`portfolio-modal`" 
                     :name="`Portfolio`" 
                     :about="`This personal portfolio site.`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`"
+                    :description="`Created in the summer of 2022, this site contains my completed/open projects and information about my programming career. This was the last of the 3 websites I planned to make for Summer 2022.`"
+                    :techs="`[Vue, Js, WebGL, HTML, CSS]`"
                     :link="portfolio_link"
                     :git_link="portfolio_repo"
                 />
@@ -62,7 +65,6 @@
             openModal(proj) {
                 document.getElementById(proj).style.opacity = 1
                 document.getElementById(proj).style.pointerEvents = `auto`
-                document.getElementById(`app-footer`).style.opacity = 0
                 document.body.style.overflow = `hidden`
             },
             closeProjectModal() {
@@ -133,6 +135,7 @@
         margin: 20px auto;
         border: solid 1px red;
         color: red;
+        background-color: white;
         font-weight: 700;
     }
 
@@ -147,10 +150,10 @@
             background-color: var(--link-color);
         }
         50% {
-            background-color: transparent;
+            background-color: white;
         }
         99% {
-            background-color: transparent;
+            background-color: white;
         }
     }
 

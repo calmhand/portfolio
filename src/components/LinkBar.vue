@@ -1,12 +1,13 @@
 <template>
     <nav id="linkbar-container">
-        <a id="nav-link" @click="openAboutSection()">about</a>
-        <a id="nav-link" @click="openProjects()">projects</a>
-        <a id="nav-link" @click="openAudio()">music</a>
+        <a id="nav-link" style="--link-color: black" @click="openAboutSection()">about</a>
+        <a id="nav-link" style="--link-color: black" @click="openProjects()">projects</a>
+        <a id="nav-link" style="--link-color: black" @click="openAudio()">music</a>
         <ContactModal/>
         <br/>
         <br/>
-        <a id="nav-link" @click="openMessenger()">message me!</a>
+        <!-- <a id="nav-link" style="color: blue;--link-color: skyblue" @click="openMessenger()">message me!</a> -->
+        <a id="nav-link" style="color: blue;--link-color: skyblue" href="mailto:solis.domum@gmail.com">email me!</a>
     </nav>
 </template>
 
@@ -41,18 +42,16 @@
                 document.body.style.overflow = `auto`   
             },
             openMessenger() {
-                document.getElementById(`email-section-container`).style.opacity = 1
-                document.getElementById(`email-section-container`).style.pointerEvents = `auto`
-                document.body.style.overflow = `hidden`
+                // FOR MODAL
+                // document.getElementById(`email-section-container`).style.opacity = 1
+                // document.getElementById(`email-section-container`).style.pointerEvents = `auto`
+                // document.body.style.overflow = `hidden`
             }
         },
     }
 </script>
 
 <style scoped>
-    #linkbar-container {
-        break-before: page;
-    }
 
     /* link styles */
     #nav-link {
@@ -79,13 +78,23 @@
 
     @keyframes colorFade {
         0% {
-            background-color: black;
+            background-color: var(--link-color);
         }
         50% {
             background-color: transparent;
         }
         99% {
             background-color: transparent;
+        }
+    }
+
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+        #linkbar-container {
+            height: 35vh
         }
     }
 
