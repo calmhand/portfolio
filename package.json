@@ -1,11 +1,13 @@
 {
-  "name": "portfolio-site",
-  "version": "0.1.0",
-  "private": true,
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": false,
+  "homepage": "https://calmhand.github.io/portfolio/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.8.3",
