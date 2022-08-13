@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://calmhand.github.io/portfolio/",
+  "homepage": "https://calmhand.github.io/portfolio",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
