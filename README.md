@@ -15,6 +15,8 @@ Make more animations.
 
 ## Known Bugs
 
+Under projects, portfolio repo link doesn't link to github repository.
+
 Fix accidental scrolling of main page while other modals are open.
 
 On Mobile, when the site first loads, the footer's height expands and does not shrink until multiple reloads.
