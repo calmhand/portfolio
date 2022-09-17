@@ -57,7 +57,7 @@
                 calc_repo: "https://github.com/calmhand/calc-app",
                 weather_link: "https://calmhand.github.io/weather-app/",
                 weather_repo: "https://github.com/calmhand/weather-app",
-                portfolio_link: "https://google.com",
+                portfolio_link: "https://calmhand.github.io/portfolio/",
                 portfolio_repo: "",
             }
         },
