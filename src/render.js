@@ -1,5 +1,5 @@
 import { vertexShaderString, fragmentShaderString } from "./shaders.js";
-import * as glMatrix from "../../../../Desktop/graphics/gl-matrix.js"
+import * as glMatrix from "./gl-matrix.js"
 
 
 function setup(gl, canvas) {
