@@ -15,12 +15,12 @@
             <TechImages/>
             <div id="studies-section">
                 <img id="school-logo" alt="uga-logo" src="../assets/uga_logo.png"/>
-                <h4 style="text-decoration: underline;">Fall 2022 Coursework</h4>
+                <h4 style="text-decoration: underline;">Spring 2023 Coursework</h4>
                 <div id="studies-content">
-                    <h5>CSCI 4050 - Software Engineering</h5>
-                    <h5>SPAN 2001 - Spanish III</h5>
-                    <h5>NMIX 4020 - Advanced Web Development</h5>
-                    <h5>STAT 2000 - Intro to Statistics</h5>
+                    <h5>CSCI 4795 - Cloud Computing</h5>
+                    <h5>CSCI 4760 - Computer Networks</h5>
+                    <h5>STAT 4210 - Statistical Methods</h5>
+                    <h5>Electives: Basketball & Career Development</h5>
                 </div>
             </div>
             <div id="interests-section">
