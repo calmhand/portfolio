@@ -4,7 +4,7 @@
     <LinkBar/>
     <AboutContent/>
     <ProjectContent/>
-    <AudioContent/>
+    <!-- <AudioContent /> -->
     <!-- <SendEmail/> -->
   </div>
   <AppFooter/>
@@ -26,6 +26,7 @@ export default {
     LinkBar,
     AboutContent,
     ProjectContent,
+    // eslint-disable-next-line
     AudioContent,
     // eslint-disable-next-line
     SendEmail,

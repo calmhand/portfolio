@@ -2,12 +2,14 @@
     <nav id="linkbar-container">
         <a id="nav-link" style="--link-color: black" @click="openAboutSection()">about</a>
         <a id="nav-link" style="--link-color: black" @click="openProjects()">projects</a>
-        <a id="nav-link" style="--link-color: black" @click="openAudio()">music</a>
+        <!-- <a id="nav-link" style="--link-color: black" @click="openAudio()">music</a> -->
         <ContactModal/>
         <br/>
         <br/>
         <!-- <a id="nav-link" style="color: blue;--link-color: skyblue" @click="openMessenger()">message me!</a> -->
-        <a id="nav-link" style="color: blue;--link-color: skyblue" href="mailto:solis.domum@gmail.com">email me!</a>
+        <a id="nav-link" style="color: forestgreen;--link-color: black" href="mailto:johnnyg@uga.edu">email</a> 
+        <a id="nav-link" :href="resumeLink" style="color: forestgreen; --link-color: black" target="_blank">resume</a>
+
     </nav>
 </template>
 
@@ -17,6 +19,7 @@
     export default {
         data() {
             return {
+                resumeLink: "https://docs.google.com/document/d/120D98UtC4b21TD2KCgEbL0M0lP9emVBv/edit?usp=sharing&ouid=104633726833746424356&rtpof=true&sd=true"
             }
         },
         components: {
