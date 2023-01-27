@@ -5,9 +5,9 @@
             <h4>{{about}}</h4>
             <span id="tech-styles">{{techs}}</span>
             <p>{{description}}</p>
-            <a style="--link-color: green" id="proj-site-link" v-bind:href="link">enter</a>
-            <a style="--link-color: black" id="proj-site-repo" v-bind:href="git_link">repo</a>
-            <a style="--link-color: red" id="close-proj-modal" @click="modalControl(proj)">close</a>
+            <a target="_blank" style="--link-color: green" id="proj-site-link" v-bind:href="link">enter</a>
+            <a target="_blank" style="--link-color: black" id="proj-site-repo" v-bind:href="git_link">repo</a>
+            <a target="_blank" style="--link-color: red" id="close-proj-modal" @click="modalControl(proj)">close</a>
         </div>
     </div>
 </template>

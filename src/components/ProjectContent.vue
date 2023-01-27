@@ -13,6 +13,7 @@
                 <img id="proj-img" alt="calc-app-img" src="../assets/project-recordings/calc-sc.png" @click="openModal(`calc-modal`)"/>
                 <img id="proj-img" alt="weather-app-img" src="../assets/project-recordings/weather-sc.png" @click="openModal(`weather-modal`)"/>
                 <img id="proj-img" alt="portfolio-img" src="../assets/project-recordings/portfolio-sc.png" @click="openModal(`portfolio-modal`)"/>
+                <img id="proj-img" alt="theatre-img" src="../assets/project-recordings/theatre-sc.png" @click="openModal(`theatre-modal`)"/>
                 <ProjectModal id="calc-modal" 
                     :proj="`calc-modal`" 
                     :name="`Calculator`" 
@@ -34,13 +35,22 @@
                 <ProjectModal id="portfolio-modal" 
                     :proj="`portfolio-modal`" 
                     :name="`Portfolio`" 
-                    :about="`This personal portfolio site.`"
+                    :about="`My personal portfolio site.`"
                     :description="`Created in the summer of 2022, this site contains my completed/open projects and information about my programming career. This was the last of the 3 websites I planned to make for Summer 2022.`"
-                    :techs="`[Vue, Js, WebGL, HTML, CSS]`"
+                    :techs="`[VueJS, WebGL, HTML, CSS]`"
                     :link="portfolio_link"
                     :git_link="portfolio_repo"
                 />
                 
+                <ProjectModal id="theatre-modal"
+                    :proj="`theatre-modal`"
+                    :name="`Cinema e-Booking System`"
+                    :about="`A mock theatre website created for my software development class.`"
+                    :description="`Creating during the Fall 2022 Semester at UGA for my Software Development class, this website simulates common theatre/movie booking websites. It features user registration, an admin console, authentification, and more.`"
+                    :techs="`[VueJS, Bootstrap, mySQL, Spring Boot, MovieDB API]`"
+                    :link="theatre_link"
+                    :git_link="theatre_repo"
+                />
             </div>
         </div>
     </div>
@@ -58,7 +68,9 @@
                 weather_link: "https://calmhand.github.io/weather-app/",
                 weather_repo: "https://github.com/calmhand/weather-app",
                 portfolio_link: "https://calmhand.github.io/portfolio/",
-                portfolio_repo: "",
+                portfolio_repo: "https://github.com/calmhand/portfolio",
+                theatre_link: "https://imgur.com/a/aQOmACz",
+                theatre_repo: "https://github.com/calmhand/SE4050-project"
             }
         },
         methods: {
