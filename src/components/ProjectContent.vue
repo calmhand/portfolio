@@ -46,7 +46,7 @@
                     :proj="`theatre-modal`"
                     :name="`Cinema e-Booking System`"
                     :about="`A mock theatre website created for my software development class.`"
-                    :description="`Creating during the Fall 2022 Semester at UGA for my Software Development class, this website simulates common theatre/movie booking websites. It features user registration, an admin console, authentification, and more.`"
+                    :description="`Creating during the Fall 2022 Semester at UGA for my Software Development class, this website simulates common theatre/movie booking websites. It features user registration, an admin console, authentication, and more.`"
                     :techs="`[VueJS, Bootstrap, mySQL, Spring Boot, MovieDB API]`"
                     :link="theatre_link"
                     :git_link="theatre_repo"
