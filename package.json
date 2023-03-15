@@ -14,7 +14,8 @@
     "gh-pages": "^4.0.0",
     "gl-matrix": "^3.4.3",
     "vue": "^3.2.13",
-    "vue-writer": "^1.2.0"
+    "vue-writer": "^1.2.0",
+    "webpack": "^5.76.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
