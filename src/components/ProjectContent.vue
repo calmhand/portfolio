@@ -10,10 +10,29 @@
                 <span>(click image for details)</span>
             </div>
             <div id="proj-imgs-container">
-                <img id="proj-img" alt="calc-app-img" src="../assets/project-recordings/calc-sc.png" @click="openModal(`calc-modal`)"/>
-                <img id="proj-img" alt="weather-app-img" src="../assets/project-recordings/weather-sc.png" @click="openModal(`weather-modal`)"/>
-                <img id="proj-img" alt="portfolio-img" src="../assets/project-recordings/portfolio-sc.png" @click="openModal(`portfolio-modal`)"/>
+                <img id="proj-img" alt="backlight-img" src="../assets/project-recordings/backlight_home.png" @click="openModal(`backlight-modal`)"/>
                 <img id="proj-img" alt="theatre-img" src="../assets/project-recordings/theatre-sc.png" @click="openModal(`theatre-modal`)"/>
+                <img id="proj-img" alt="portfolio-img" src="../assets/project-recordings/portfolio-sc.png" @click="openModal(`portfolio-modal`)"/>
+                <img id="proj-img" alt="weather-app-img" src="../assets/project-recordings/weather-sc.png" @click="openModal(`weather-modal`)"/>
+                <img id="proj-img" alt="calc-app-img" src="../assets/project-recordings/calc-sc.png" @click="openModal(`calc-modal`)"/>
+
+                <ProjectModal id="backlight-modal"
+                    :proj="`backlight-modal`"
+                    :name="`Backlight Film Festival`"
+                    :about="`The official website of the Backlight Student Film Festival hosted at the University of Georgia.`"
+                    :description="`I was hired by the festival staff as head of New Media and was given the task of designing and implementing this entire site from scratch. This website is the hub for all information and updates regarding the film festival.`"
+                    :techs="`[Nuxt3, Bootstrap, Sass, Typescript, Google API, Full Calendar, Font Awesome]`"
+                    :link="backlight_link"
+                />
+                <ProjectModal id="theatre-modal"
+                    :proj="`theatre-modal`"
+                    :name="`Cinema e-Booking System`"
+                    :about="`A mock theatre website created for my software development class.`"
+                    :description="`Creating during the Fall 2022 Semester at UGA for my Software Development class, this website simulates common theatre/movie booking websites. It features user registration, an admin console, authentication, and more.`"
+                    :techs="`[VueJS, Bootstrap, mySQL, Spring Boot, MovieDB API]`"
+                    :link="theatre_link"
+                    :git_link="theatre_repo"
+                />
                 <ProjectModal id="calc-modal" 
                     :proj="`calc-modal`" 
                     :name="`Calculator`" 
@@ -41,16 +60,6 @@
                     :link="portfolio_link"
                     :git_link="portfolio_repo"
                 />
-                
-                <ProjectModal id="theatre-modal"
-                    :proj="`theatre-modal`"
-                    :name="`Cinema e-Booking System`"
-                    :about="`A mock theatre website created for my software development class.`"
-                    :description="`Creating during the Fall 2022 Semester at UGA for my Software Development class, this website simulates common theatre/movie booking websites. It features user registration, an admin console, authentication, and more.`"
-                    :techs="`[VueJS, Bootstrap, mySQL, Spring Boot, MovieDB API]`"
-                    :link="theatre_link"
-                    :git_link="theatre_repo"
-                />
             </div>
         </div>
     </div>
@@ -70,7 +79,9 @@
                 portfolio_link: "https://calmhand.github.io/portfolio/",
                 portfolio_repo: "https://github.com/calmhand/portfolio",
                 theatre_link: "https://imgur.com/a/aQOmACz",
-                theatre_repo: "https://github.com/calmhand/SE4050-project"
+                theatre_repo: "https://github.com/calmhand/SE4050-project",
+                backlight_link: "https://backlightfilmfestival.com/",
+                backlight_repo: "",
             }
         },
         methods: {
