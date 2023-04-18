@@ -19,7 +19,7 @@
     export default {
         data() {
             return {
-                resumeLink: "https://docs.google.com/document/d/120D98UtC4b21TD2KCgEbL0M0lP9emVBv/edit?usp=sharing&ouid=104633726833746424356&rtpof=true&sd=true"
+                resumeLink: "https://docs.google.com/document/d/1WpU3J3BXLamLQFoyGD_KyDpm9tlak3TrFiJ6lHyVQKE/edit?usp=sharing"
             }
         },
         components: {
