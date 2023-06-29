@@ -1,7 +1,7 @@
 <template>
     <nav id="linkbar-container">
         <a id="nav-link" style="--link-color: black" @click="openAboutSection()">about</a>
-        <a id="nav-link" style="--link-color: black" @click="openProjects()">projects</a>
+        <a id="nav-link" style="--link-color: black" @click="openProjects()">portfolio</a>
         <!-- <a id="nav-link" style="--link-color: black" @click="openAudio()">music</a> -->
         <ContactModal/>
         <br/>

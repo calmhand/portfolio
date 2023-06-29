@@ -6,7 +6,6 @@ This site will serve to be an expression of myself and my interests.
 
 ## I Want To
 
-! Add a link to download CV/Resume.
 ! Redo the headers for each modal.
 ! Implement a responsive email form to replace the mailto link.
 [tried to implement on before but my knowledge of CSS is limited to make it how I want.]
