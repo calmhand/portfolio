@@ -15,22 +15,21 @@
             <TechImages/>
             <div id="studies-section">
                 <img id="school-logo" alt="uga-logo" src="../assets/uga_logo.png"/>
-                <h4 style="text-decoration: underline;">Spring 2023 Coursework</h4>
+                <h4 style="text-decoration: underline;">Fall 2023 Coursework</h4>
                 <div id="studies-content">
-                    <h5>CSCI 4795 - Cloud Computing</h5>
-                    <h5>CSCI 4760 - Computer Networks</h5>
-                    <h5>STAT 4210 - Statistical Methods</h5>
-                    <h5>Electives: Basketball & Career Development</h5>
+                    <h5>CSCI 4800 - Human-Computer Interaction</h5>
+                    <h5>CSCI 3030 - Computing, Ethics, and Society</h5>
+                    <h5>NMIX - New Media Capstone</h5>
                 </div>
             </div>
             <div id="interests-section">
                 <h1 style="padding: 10px;">Interests</h1>
                 <div>
                     <p>
-                        <b style="font-size: 28px;">Web Frameworks</b>, Databases, Front-End Development, <b style="font-size: 28px;">Back-End Development</b>, 
+                        <b style="font-size: 28px;">Web Frameworks</b>, Databases, Front-End Development, <b style="font-size: 28px;">Cloud Computing</b>, 
                         Graphics Programming, <b style="font-size: 28px;">Audio Engineering</b>, Video Gaming, Cooking, 
                         <b style="font-size: 28px;">Basketball</b>, Baseball, <b style="font-size: 28px;">Fashion</b>,
-                        Music Production, National Parks, Natural Science, Environmental Science, <b style="font-size: 28px;">Forests</b>.
+                        Music Production, National Parks, Natural Science, Environmental Science, <b style="font-size: 28px;">Forestry</b>.
                     </p>
                 </div>
             </div>

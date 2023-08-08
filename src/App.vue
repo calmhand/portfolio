@@ -45,7 +45,6 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    height: calc(100% - 28px);
   }
 
   * {
@@ -54,13 +53,14 @@ export default {
   }
 
   body {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .app-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
   }
 
   /* laptop/desktop */

@@ -32,7 +32,7 @@
         },
         mounted() {
             this.getCurrentYear()
-            window.onscroll = (() =>  this.scrollFunction())
+            // window.onscroll = (() =>  this.scrollFunction())
         }
     }
 </script>
